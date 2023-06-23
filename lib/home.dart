@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:workshop/About.dart';
+import 'package:workshop/about.dart';
 import 'package:workshop/contact.dart';
 import 'package:workshop/utils/custom_navigation_bar.dart';
 
@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Contact(),
+                    builder: (context) => const Contact(),
                   ),
                 );
               },
@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => About(),
+                    builder: (context) => const About(),
                   ),
                 );
               },

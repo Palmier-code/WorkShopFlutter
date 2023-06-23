@@ -30,13 +30,13 @@ class CustomNavigationBar extends StatelessWidget {
         ),
       ],
       onTap: (value) {
-        print(value);
         switch (value) {
           case 0:
             Navigator.push(
               context,
               PageRouteBuilder(
-                pageBuilder: (context, animation1, animation2) => PageOne(),
+                pageBuilder: (context, animation1, animation2) =>
+                    const PageOne(),
                 transitionDuration: Duration.zero,
                 reverseTransitionDuration: Duration.zero,
               ),
