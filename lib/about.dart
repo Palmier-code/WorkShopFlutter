@@ -15,8 +15,34 @@ class _AboutState extends State<About> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("About"),
       ),
-      body: const Center(
-        child: Text("It's the About"),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              "Bah voila c'est moi, MAX MAX SUPER MAX",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 48,
+              ),
+            ),
+            const SizedBox(
+              height: 8,
+            ),
+            CircleAvatar(
+              radius: 200,
+              backgroundColor: Colors.purple,
+              child: Padding(
+                padding: const EdgeInsets.all(8),
+                child: ClipOval(
+                  child: Image.network(
+                    "https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTJXw84YC1Cr4l578Ncix3oXU6hXDarw9W7nWhmfCLIAnTS_xkpu-C3cQSkWg7yo1GE",
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
